@@ -1,0 +1,36 @@
+{
+  "name": "bradify",
+  "version": "1.0.0",
+  "description": "A cross-platform desktop music streaming application built with Electron and Node.js, featuring Spotify API integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "electron": "^36.3.2",
+    "electron-store": "^10.0.1",
+    "express": "^5.1.0",
+    "howler": "^2.2.4",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.0",
+    "music-metadata": "^11.2.3",
+    "sequelize": "^6.37.7",
+    "socket.io": "^4.8.1",
+    "spotify-web-api-node": "^5.0.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "electron-builder": "^26.0.12",
+    "electron-reload": "^2.0.0-alpha.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10"
+  }
+}
