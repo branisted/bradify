@@ -4,7 +4,8 @@
   "description": "A cross-platform desktop music streaming application built with Electron and Node.js, featuring Spotify API integration.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron src/main/index.js"
   },
   "keywords": [],
   "author": "",
