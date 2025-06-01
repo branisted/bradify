@@ -4,7 +4,7 @@ function PingPong() {
     const [message, setMessage] = useState('Loading...');
 
     useEffect(() => {
-        fetch('http://localhost:3001/ping')
+        fetch('http://localhost:3001/api/ping')
             .then((res) => res.text())
             .then((data) => setMessage(data))
             .catch(() => setMessage('Error connecting to backend'));
