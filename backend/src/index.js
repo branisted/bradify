@@ -8,13 +8,15 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
+const FRONTEND_PORT = process.env.FRONTEND_PORT;
+
 app.use(cors({
-    origin: `http://localhost:5173}`, // or your frontend URL
+    origin: `http://localhost:${FRONTEND_PORT}`, // or your frontend URL
     credentials: true
 }));
 
 
-const PORT = 3001; // or your preferred port
+const PORT = process.env.PORT; // or your preferred port
 
 app.post('/api/spotify/token', async (req, res) => {
     const { code } = req.body;
