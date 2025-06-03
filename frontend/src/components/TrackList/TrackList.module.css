@@ -1,0 +1,74 @@
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    background: rgba(34, 34, 34, 0.95);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 12px 20px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.12);
+    transition: background 0.2s, box-shadow 0.2s;
+    gap: 16px;
+}
+
+.item:hover {
+    background: #232323;
+    box-shadow: 0 4px 24px 0 rgba(30,185,84,0.08);
+}
+
+.albumArt {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.18);
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.trackName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.artistName {
+    font-size: 0.95rem;
+    color: #b3b3b3;
+    margin-top: 2px;
+}
+
+.playButton {
+    background: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px 0 rgba(30,185,84,0.12);
+    outline: none;
+}
+
+.playButton:hover,
+.playButton:focus {
+    background: #17a74a;
+    transform: translateY(-1px) scale(1.04);
+}

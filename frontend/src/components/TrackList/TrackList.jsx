@@ -1,13 +1,28 @@
-// src/components/TrackList.jsx
+import styles from "./TrackList.module.css";
+
 export default function TrackList({ tracks, onPlay }) {
     if (!tracks.length) return null;
     return (
-        <ul>
+        <ul className={styles.list}>
             {tracks.map(track => (
-                <li key={track.id} style={{ marginBottom: 8 }}>
-                    <img src={track.album.images[2]?.url} alt="" width={40} style={{ verticalAlign: "middle" }} />
-                    <span style={{ marginLeft: 8 }}>{track.name} — {track.artists.map(a => a.name).join(", ")}</span>
-                    <button style={{ marginLeft: 8 }} onClick={() => onPlay(track.uri)}>Play</button>
+                <li key={track.id} className={styles.item}>
+                    <img
+                        src={track.album.images[2]?.url}
+                        alt={track.name}
+                        className={styles.albumArt}
+                    />
+                    <div className={styles.info}>
+                        <span className={styles.trackName}>{track.name}</span>
+                        <span className={styles.artistName}>
+                            {track.artists.map(a => a.name).join(", ")}
+                        </span>
+                    </div>
+                    <button
+                        className={styles.playButton}
+                        onClick={() => onPlay(track.uri)}
+                    >
+                        ▶ Play
+                    </button>
                 </li>
             ))}
         </ul>

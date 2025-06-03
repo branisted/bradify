@@ -1,0 +1,19 @@
+.playerBar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    background: rgba(24, 24, 24, 0.98);
+    box-shadow: 0 -4px 24px 0 rgba(0,0,0,0.35);
+    z-index: 100;
+    padding: 0 0 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Optional: Make sure content above doesn't overlap */
+/*body, #root {*/
+/*    padding-bottom: 80px; !* adjust if needed *!*/
+/*}*/

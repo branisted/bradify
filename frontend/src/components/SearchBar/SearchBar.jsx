@@ -1,5 +1,5 @@
-// src/components/SearchBar/SearchBar.jsx
 import { useState } from "react";
+import styles from "./SearchBar.module.css";
 
 export default function SearchBar({ onSearch }) {
     const [query, setQuery] = useState("");
@@ -12,15 +12,15 @@ export default function SearchBar({ onSearch }) {
     };
 
     return (
-        <form onSubmit={handleSubmit} style={{ marginBottom: 16 }}>
+        <form onSubmit={handleSubmit} className={styles.searchBar}>
             <input
                 type="text"
                 placeholder="Search for a song, artist, or album"
                 value={query}
                 onChange={e => setQuery(e.target.value)}
-                style={{ width: 300, padding: 8 }}
+                className={styles.input}
             />
-            <button type="submit" style={{ marginLeft: 8 }}>Search</button>
+            <button type="submit" className={styles.button}>Search</button>
         </form>
     );
 }
