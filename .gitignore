@@ -1,66 +1,28 @@
-# Node modules
-**/node_modules/
-.pnpm/
-
 # Logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+frontend/node_modules
+dist
+dist-ssr
+*.local
 
-# dotenv environment variables
-.env
-.env.*.local
-.env.local
+backend/node_modules
 
-# OS
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# Vite cache
-**/dist/
-**/.vite/
-
-# Electron build artifacts
-**/out/
-**/build/
-**/*.log
-
-# VSCode
-.vscode/
-
-# Optional npm cache directory
-.npm/
-
-# Optional eslint cache
-.eslintcache
-
-# Parcel-bundler cache (if ever used)
-.cache/
-
-# Mac system files
-*.DS_Store
-
-# Test coverage
-coverage/
-
-# Compiled TypeScript
-*.tsbuildinfo
-
-# Logs and crash dumps
-*.log
-*.tgz
-*.bak
-
-# Other
-.idea/
-*.swp
-*.swo
-*.orig
+*.env
